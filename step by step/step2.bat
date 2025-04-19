@@ -13,3 +13,5 @@ echo <>
 :: how to working this symbol
 echo "|"
 echo "<>"
+
+pause
