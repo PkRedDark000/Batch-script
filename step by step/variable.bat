@@ -13,6 +13,10 @@ echo %b%
 echo %c%
 ::going cmd and type in {set } all variable
 
+::pc real username 
+echo %username% 
 
+::modife pc username only for temp
+set username=hai
 
 pause
