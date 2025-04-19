@@ -11,6 +11,8 @@ set c=$
 echo %a%
 echo %b%
 echo %c%
+::going cmd and type in {set } all variable
+
 
 
 pause
