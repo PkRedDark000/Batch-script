@@ -26,4 +26,34 @@ echo hai
 :b
 echo pkreddark
 
+set c=tech
+if %c% == tech goto :d
+echo hai-hai
+:d
+echo tech-tech
+
+if not a==2  echo hello
+if not a==a  echo hello-hello
+
+::password comment
+:: own methed
+@REM set password=pkreddark
+@REM set /p input=Enter the password :
+@REM if %password% == %input% goto :f
+@REM echo hai 
+@REM :f
+@REM echo bye
+
+:: sec methed
+set password=pkreddark
+echo Enter The Password :
+set /p user=
+if %password% == %user% goto :welcome
+if not %password% == %user% goto :bye
+
+:welcome
+echo welcome
+exit
+:bye
+echo enter correct password
 pause
