@@ -36,16 +36,23 @@ if not a==2  echo hello
 if not a==a  echo hello-hello
 
 ::password comment
-:: own methed
-@REM set password=pkreddark
-@REM set /p input=Enter the password :
-@REM if %password% == %input% goto :f
-@REM echo hai 
-@REM :f
-@REM echo bye
+::own methed
+set password=pkreddark
+:pass
+set /p input=Enter the password :
+if %password% == %input% goto :welcome
+if not %password% == %input% goto :bye
+:welcome
+echo welcome
+pause
+exit
+:bye
+echo enter correct password
+goto:pass
 
 :: sec methed
 set password=pkreddark
+:pass
 echo Enter The Password :
 set /p user=
 if %password% == %user% goto :welcome
@@ -53,7 +60,9 @@ if not %password% == %user% goto :bye
 
 :welcome
 echo welcome
+pause
 exit
 :bye
 echo enter correct password
+goto :pass
 pause
