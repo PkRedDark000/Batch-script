@@ -21,9 +21,9 @@ echo hai
 :a
 echo pkreddark
 
-if 1 NEQ 1 goto :a
+if 1 NEQ 1 goto :b
 echo hai
-:a
+:b
 echo pkreddark
 
 pause
